@@ -1,0 +1,33 @@
+{
+  "name": "genpark-document-redaction-pii-scrubber-skill",
+  "version": "1.0.0",
+  "description": "High-speed document PII redaction and credential sanitizer featuring Luhn credit-card verification, reversible salt hashing, and audit logs.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "pii-redaction",
+    "document-security",
+    "data-privacy",
+    "luhn-checksum",
+    "zero-dependency",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "scrub_text",
+      "description": "Mask or tokenize PII entities (SSN, credit cards, emails, phones, API keys)."
+    },
+    {
+      "name": "validate_luhn_checksum",
+      "description": "Verify whether a 13-19 digit number is a valid credit card."
+    },
+    {
+      "name": "unmask_text",
+      "description": "Revert tokenized text using the authorization salt token map."
+    },
+    {
+      "name": "run_benchmark_pii_scrubbing",
+      "description": "Run comprehensive PII detection and redaction benchmark."
+    }
+  ]
+}
